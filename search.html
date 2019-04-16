@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function SetPageTitle()
+            {
+                let params = (new URL(document.location)).searchParams;
+                searchStr = params.get("q");
+                document.title = searchStr + " - Google Search"
+            }
+        </script>        
+    </head>
+    <body onload="SetPageTitle()">
+        <div id="header" style="text-align:center; padding: 10px; margin-top: 30px">
+            <img src="images/googlelogo_color_272x92dp.png" alt="Google Image">
+        </div>
+        <div style="text-align:center">
+            <h1>Search Result Page To Be Implemented</h1>
+        </div>
+    </body>
+</html>
